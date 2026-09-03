@@ -20,7 +20,3 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build and push Docker image
-        run: |
-          docker build . --tag ghcr.io/iconica-rain/skills-publish-package/stackoverflown:main
-          docker push ghcr.io/iconica-rain/skills-publish-package/stackoverflown:main
